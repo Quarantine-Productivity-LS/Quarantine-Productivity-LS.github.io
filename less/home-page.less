@@ -1,0 +1,143 @@
+// home page less file
+.hero-ES {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-size: 5rem;
+		margin: 0;
+	}
+	p {
+		width: 80%;
+		border: 1.8px @salmon solid;
+		border-radius: 15px;
+	}
+	@media @phone {
+		width: 100%;
+	}
+}
+.hero-image-ES {
+	img {
+		border: 5px @salmon solid;
+		border-radius: 45px;
+	}
+}
+.productivity-images-ES {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	img {
+		width: 40%;
+		border: 1.5px @salmon solid;
+		border-radius: 10px;
+	}
+	@media @phone {
+		display: none;
+	}
+}
+
+// categories styling:
+.categories-container-ES {
+	display: flex;
+	justify-content: space-evenly;
+	@media @phone {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.categories-info-and-img-ES {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	padding: 2% 0;
+	.categories-info-ES,
+	.categories-section-img-container-ES {
+		width: 40%;
+	}
+	img {
+		height: 40vh;
+		border-radius: 20px;
+		border: 2px solid lightcoral;
+		@media @tablet {
+			display: none;
+		}
+	}
+	h2 {
+		text-align: center;
+	}
+	@media @phone {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		img {
+			display: none;
+		}
+		p {
+			width: 100%;
+		}
+	}
+}
+.categories-info-ES {
+	@media @phone {
+		width: 100%;
+		p {
+			display: none;
+		}
+	}
+}
+.categories-section-ES {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media @phone {
+		width: 100%;
+	}
+}
+.categories-ES {
+	width: 22%;
+	padding: 0 0.5%;
+	background: rgba(211, 211, 211, 0.548);
+	border: 2px solid @salmon;
+	border-radius: 15px;
+	@media @phone {
+		width: 100%;
+		align-items: center;
+		margin: 3% 0;
+	}
+	img {
+		border: 1.5px @salmon solid;
+		border-radius: 10px;
+	}
+	h4 {
+		text-align: center;
+		font-size: 2rem;
+		border-radius: 20px;
+		border: 1px solid lightcoral;
+	}
+	.button-container-ES {
+		display: flex;
+		justify-content: center;
+		button {
+			font-family: @headings-font;
+
+			border-radius: 20px;
+			border: 1px solid lightcoral;
+			background-color: lightcoral;
+			color: #ffffff;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 12px 45px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: transform 80ms ease-in;
+			margin-bottom: 2%;
+		}
+		@media @phone {
+			width: 100%;
+		}
+	}
+}
